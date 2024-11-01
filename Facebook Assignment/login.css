@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #dfe3ee;
+    box-sizing: border-box;
+}
+
+h1, p{
+    margin: 0;
+    padding: 0;
+    font-family:Helvetica, sans-serif;
+}
+.mainpage{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    margin-top: 150px;
+    /* width: 600px; */
+}
+
+.logocontainer{
+    width: 400px;
+    box-sizing: border-box;
+    
+    
+}
+.logocontainer h1{
+    color: blue;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.logocontainer p{
+    font-size: 18px;
+    /* color: aqua; */
+}
+
+.logincontainer{
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 1.5px 1.5px 3px lightgrey;
+
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+
+.login input{
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.login input::placeholder{
+    font-family: helvetica;
+    font-size: 16px;
+    color: lightgrey;
+}
+
+.btn1{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: helvetica;
+    margin-bottom: 5px;
+}
+
+.login p{
+    text-align: center;
+    color: blue;
+    font-family: helvetica;
+    font-size: 14px;
+    padding-bottom: 10px;
+    
+}
+
+.newacc{
+    display: flex;
+    justify-content: center;
+}
+
+.btn2{
+    background-color: green;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-family: helvetica;
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 10px;
+}
