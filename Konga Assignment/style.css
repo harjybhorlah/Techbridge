@@ -20,6 +20,11 @@ h1{
     padding: 0; 
 }
 
+h3{
+    margin: 0;
+    padding: 0;
+}
+
 img{
     margin: 0;
     padding: 0;
@@ -52,7 +57,7 @@ header{
     padding: 8px;
     display: flex;
     flex-direction: row;
-    height: 20px;
+    /* height: 20px; */
     background-color: rgb(246, 246, 246);
     justify-content:center;
     align-items: center;
@@ -68,7 +73,7 @@ header{
 .header3{
     display: flex;
     background-color: rgb(237, 1, 127);
-    height: 60px;
+    /* height: 60px; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -94,6 +99,7 @@ header{
     height: 60px;
     color: white;
     box-sizing: border-box;
+    cursor: pointer;
     
 }
 
@@ -102,6 +108,7 @@ header{
     display: flex;
     height: 60px;
     align-items: center;
+    position: relative;
 }
 
 .div5 span{
@@ -111,6 +118,31 @@ header{
     font-weight: 600;
     font-size: 15px;
 }
+
+.div5 .tooltip{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    background-color: white;
+    color: black;
+    top: 60px;
+    opacity: 0;
+    transition: opacity, 1s;
+    pointer-events: none;
+    
+}
+ .tooltiptext{
+    padding: 10px;
+}
+
+
+
+.div5:hover .tooltip{
+    opacity: 1;
+}
+
+
 
 .text:hover{
     background-color: white;
@@ -171,7 +203,7 @@ header{
 
 .searchbarcontainer input{
     flex: 1;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     border: none;
 }
@@ -186,19 +218,18 @@ header{
 
 .searchbarcontainer button{
     width: 40px;
-    padding: 8px;
+    padding: 10px;
     margin-left: -20px;
     border-radius: 3px;
     border: none;
     background-color: #fba100;
 }
 
-.searchbarcontainer .searchicon img{
-    height: 15px;
+.fa-magnifying-glass{
+    color: white;
 }
-
 .header4{
-    height: 41px;
+    /* height: 41px; */
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -214,6 +245,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .sections:hover{
@@ -285,6 +317,8 @@ header{
         box-sizing: border-box;
         padding: 10px;
         background-color: white;
+        box-sizing: border-box;
+        cursor: pointer;
     }
 
     .product{
@@ -331,7 +365,7 @@ header{
         font-size: 16px;
         font-weight: 400;
         position: absolute;
-        left: 130px;
+        left: 105px;
         text-decoration: line-through;
         opacity: 0.7;
     }
@@ -339,7 +373,7 @@ header{
     .prices .figure{
         font-size: 12px;
         position: absolute;
-        left:220px;
+        left:180px;
         background: rgb(236, 175, 175);
         color: rgb(236, 67, 67);
         padding: 3px;
@@ -381,5 +415,111 @@ header{
     Page layout  Styling ends here
 -------------------------------------*/
 
+
+/*------------------------------------
+    Footer  Styling Starts here
+-------------------------------------*/
+
+.content1{
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    background-color:rgb(28, 29, 31);
+    padding: 10px 25px;
+    align-items: center;
+    color: rgb(181, 181, 181);
+    justify-content: space-between;
+}
+.container{
+    display: flex;
+    width: 53%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.contactcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
     
+}
+
+.contactcontainer:hover{
+    color: white;
+}
+
+.contactcontainer h3{
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.contactcontainer p{
+    font-size: 14px;
+}
+    .fa-envelope, .fa-whatsapp{
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius:16px ;
+    font-size: 16px;
+}
+
+.fa-phone{
+    background-color: rgb(65, 61, 61);
+    color: rgb(3, 3, 3);
+    padding: 8px;
+    border-radius:16px ;
+    font-size: 16px;
+}
+
+
+
+
+.deals{
+    display: flex;
+    width: 45%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+   
+}
+
+.deals h3{
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+.deals p{
+    font-size: 14px;
+}
+.subscribe{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+
+.subscribe input{
+    flex: 1;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    
+}
+
+.subscribe button{
+    background-color: rgb(237, 1, 127);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 11px;
+    margin-left: -8px;
+    border: none;
+    
+}
    
