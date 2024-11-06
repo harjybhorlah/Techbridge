@@ -2,75 +2,78 @@
     General Styles statrts here
 -------------------------------------*/
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: rgb(240, 240, 240);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
-h1{
+h1 {
     font-size: 40px;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 
-h3{
+h3 {
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     margin: 0;
     padding: 0;
 }
+
 /*------------------------------------
     Header Styling statrts here
 -------------------------------------*/
-header{
+header {
     display: flex;
     flex-direction: column;
     margin: 15px 0 0 0;
     padding: 0;
 }
 
-.header1{
+.header1 {
     margin: 0;
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-    
+
 }
-.header1 img{
+
+.header1 img {
     width: 100%;
     margin: 0;
     padding: 0;
     border: none;
 }
-.header2{
+
+.header2 {
     margin: 0;
     padding: 8px;
     display: flex;
     flex-direction: row;
     /* height: 20px; */
     background-color: rgb(246, 246, 246);
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 50px;
-    
-    
+
+
 }
 
-.header2 img{
+.header2 img {
     height: 20px;
 }
 
-.header3{
+.header3 {
     display: flex;
     background-color: rgb(237, 1, 127);
     /* height: 60px; */
@@ -79,20 +82,26 @@ header{
     align-items: center;
     justify-content: center;
     margin: 0;
-    
-    
+
+
 }
 
-.logocontainer{
+.responsive {
+    display: none;
+}
+
+
+.logocontainer {
     width: 145px;
     margin-right: 30px;
     margin-left: 25px;
 }
-.header3 .logocontainer img{
+
+.header3 .logocontainer img {
     height: 35px;
 }
 
-.text{
+.text {
     display: flex;
     align-items: center;
     width: 118px;
@@ -100,18 +109,18 @@ header{
     color: white;
     box-sizing: border-box;
     cursor: pointer;
-    
+
 }
 
 
-.div5{
+.div5 {
     display: flex;
     height: 60px;
     align-items: center;
     position: relative;
 }
 
-.div5 span{
+.div5 span {
     background-color: rgb(226, 93, 164);
     padding-inline: 4px 6px;
     border-radius: 10px;
@@ -119,7 +128,7 @@ header{
     font-size: 15px;
 }
 
-.div5 .tooltip{
+.div5 .tooltip {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -130,43 +139,44 @@ header{
     opacity: 0;
     transition: opacity, 1s;
     pointer-events: none;
-    
+
 }
- .tooltiptext{
+
+.tooltiptext {
     padding: 10px;
 }
 
 
 
-.div5:hover .tooltip{
+.div5:hover .tooltip {
     opacity: 1;
 }
 
 
 
-.text:hover{
+.text:hover {
     background-color: white;
     color: rgb(237, 1, 127);
 
 }
 
-.text p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size:15px;
+.text p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
     padding-left: 13px;
     font-weight: 500px;
     padding-right: 25px;
 }
 
 
-.cartitems{
+.cartitems {
     width: 145px;
     display: flex;
     background-color: #33b27b;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     align-items: center;
     justify-content: center;
@@ -175,16 +185,16 @@ header{
     box-sizing: border-box;
     margin: 5px 25px 5px 5px;
     padding: 10px 0;
-    
-    
-    
+
+
+
 }
 
-.cartitems .fa-cart-shopping{
+.cartitems .fa-cart-shopping {
     font-size: 14px;
 }
 
-.cartitems span{
+.cartitems span {
     background-color: white;
     color: black;
     padding: 1px 6px;
@@ -194,29 +204,29 @@ header{
 
 
 
-.searchbarcontainer{
+.searchbarcontainer {
     flex: 1;
     display: flex;
-    
+
 
 }
 
-.searchbarcontainer input{
+.searchbarcontainer input {
     flex: 1;
     padding: 10px;
     border-radius: 4px;
     border: none;
 }
 
-.searchbarcontainer input::placeholder{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.searchbarcontainer input::placeholder {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: rgb(156, 151, 151);
 }
 
-.searchbarcontainer button{
+.searchbarcontainer button {
     width: 40px;
     padding: 10px;
     margin-left: -20px;
@@ -225,21 +235,22 @@ header{
     background-color: #fba100;
 }
 
-.fa-magnifying-glass{
+.fa-magnifying-glass {
     color: white;
 }
-.header4{
+
+.header4 {
     /* height: 41px; */
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     background-color: rgb(172, 22, 97);
     color: white;
     margin-top: 0;
-    
+
 }
 
-.sections{
+.sections {
     flex: 1;
     height: 41px;
     display: flex;
@@ -248,16 +259,16 @@ header{
     cursor: pointer;
 }
 
-.sections:hover{
+.sections:hover {
     background-color: white;
     color: black;
-    
+
 }
 
-.sections p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size:12px;
+.sections p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
     font-family: 600px;
     text-align: center;
 }
@@ -270,30 +281,31 @@ header{
 /*------------------------------------
     Head text  Styling statrts here
 -------------------------------------*/
-.headtext{
+.headtext {
     background-color: white;
     padding: 15px 30px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.headtext p{
+.headtext p {
     font-size: 12px;
     padding: 10px;
 }
 
-.headtext span{
-    color:rgb(172, 22, 97) ;
-    font-weight:bold;
+.headtext span {
+    color: rgb(172, 22, 97);
+    font-weight: bold;
 }
 
 
-.bannerimgcontainer{
+.bannerimgcontainer {
     margin: 30px;
     box-sizing: border-box;
 }
-.bannerimgcontainer img{
-   width: 100%;
+
+.bannerimgcontainer img {
+    width: 100%;
 }
 
 /*------------------------------------
@@ -304,112 +316,113 @@ header{
 /*------------------------------------
     Layout Styling starts here
 -------------------------------------*/
-    .gridcontainer{
-        box-sizing: border-box;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap:15px;
-        margin: 0 30px;
-    }
-    .items{
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding: 10px;
-        background-color: white;
-        box-sizing: border-box;
-        cursor: pointer;
-    }
+.gridcontainer {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    margin: 0 30px;
+}
 
-    .product{
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: column;
-        align-items: center;
-        /* justify-content:flex-start; */
-    }
+.items {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
 
-    .productdescription{
-        border-bottom: 1px solid lightgray;
-        padding: 5px 0;
-        margin: 5px 0;
-    }
+.product {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:flex-start; */
+}
+
+.productdescription {
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0;
+    margin: 5px 0;
+}
 
 
-    .product img{
-        width:100%;
-    }
+.product img {
+    width: 100%;
+}
 
-    .product p{
-        font-size: 16px;
-        font-weight: 400;
-        padding: 5px;
-        margin: 5px;
-        
-    }
+.product p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    margin: 5px;
 
-    .prices{
-        display: flex;
-        align-items: center;
-        justify-content:left;
-        position: relative;
-        font-size: 20px;
-        font-weight: 500;
-        border-bottom: 1px solid lightgray;
-        padding: 0 0 20px 0;
+}
 
-    }
-    
+.prices {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid lightgray;
+    padding: 0 0 20px 0;
 
-    .prices .discountprice {
-        font-size: 16px;
-        font-weight: 400;
-        position: absolute;
-        left: 105px;
-        text-decoration: line-through;
-        opacity: 0.7;
-    }
+}
 
-    .prices .figure{
-        font-size: 12px;
-        position: absolute;
-        left:180px;
-        background: rgb(236, 175, 175);
-        color: rgb(236, 67, 67);
-        padding: 3px;
-        border-radius: 8px;
-        
-    }
 
-    .time{
-        border-bottom: 1px solid lightgray;
-    }
+.prices .discountprice {
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 105px;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
 
-    .time p{
-        padding: 10px 0;
-        font-weight: 600;
-    }
+.prices .figure {
+    font-size: 12px;
+    position: absolute;
+    left: 180px;
+    background: rgb(236, 175, 175);
+    color: rgb(236, 67, 67);
+    padding: 3px;
+    border-radius: 8px;
 
-    .sold p{
-        margin: 5px 0 20px 0;
-        font-weight: 500;
-       
-    }
+}
 
-    .addcart p{
-        text-align: center;
-         border: 1px solid rgb(237, 1, 127) ;
-         color: rgb(237, 1, 127);
-         font-weight: 600;
-         border-radius: 5px;
-         padding: 8px;
-         margin: 0;
-    }
+.time {
+    border-bottom: 1px solid lightgray;
+}
 
-    .addcart:hover p {
-        background-color:rgb(237, 1, 127);
-        color: white;
-    }
+.time p {
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.sold p {
+    margin: 5px 0 20px 0;
+    font-weight: 500;
+
+}
+
+.addcart p {
+    text-align: center;
+    border: 1px solid rgb(237, 1, 127);
+    color: rgb(237, 1, 127);
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0;
+}
+
+.addcart:hover p {
+    background-color: rgb(237, 1, 127);
+    color: white;
+}
 
 /*------------------------------------
     Page layout  Styling ends here
@@ -420,99 +433,111 @@ header{
     Footer  Styling Starts here
 -------------------------------------*/
 
-.content1{
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.content1 {
     width: 100%;
     margin-top: 30px;
     box-sizing: border-box;
     display: flex;
-    background-color:rgb(28, 29, 31);
+    background-color: rgb(28, 29, 31);
     padding: 10px 25px;
     align-items: center;
     color: rgb(181, 181, 181);
     justify-content: space-between;
 }
-.container{
+
+
+.container {
     display: flex;
     width: 53%;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
 }
-.contactcontainer{
+
+.contactcontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
     cursor: pointer;
-    
+
 }
 
-.contactcontainer:hover{
+.contactcontainer:hover {
     color: white;
 }
 
-.contactcontainer h3{
-    padding-bottom: 5px;
+.contactcontainer h3 {
+    padding-bottom: 8px;
     font-size: 16px;
 }
 
-.contactcontainer p{
+.contactcontainer p {
     font-size: 14px;
 }
-    .fa-envelope, .fa-whatsapp{
+
+.fa-envelope,
+.fa-whatsapp {
     background-color: white;
     color: black;
     padding: 8px;
-    border-radius:16px ;
+    border-radius: 16px;
     font-size: 16px;
 }
 
-.fa-phone{
+.fa-phone {
     background-color: rgb(65, 61, 61);
     color: rgb(3, 3, 3);
     padding: 8px;
-    border-radius:16px ;
+    border-radius: 16px;
     font-size: 16px;
 }
 
 
 
 
-.deals{
+.deals {
     display: flex;
     width: 45%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-   
+
 }
 
-.deals h3{
-    padding-bottom: 5px;
+.deals h3 {
+    padding-bottom: 8px;
     font-size: 16px;
 }
 
-.deals p{
+.deals p {
     font-size: 14px;
 }
-.subscribe{
+
+.subscribe {
     display: flex;
     align-items: center;
     width: 50%;
 }
 
 
-.subscribe input{
+.subscribe input {
     flex: 1;
     padding: 12px;
     border-radius: 3px;
     border: none;
-    
+
 }
 
-.subscribe button{
+.subscribe button {
     background-color: rgb(237, 1, 127);
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -520,6 +545,280 @@ header{
     padding: 11px;
     margin-left: -8px;
     border: none;
+
+}
+
+.content2 {
+    display: flex;
+    background-color: rgb(12, 12, 12);
+    color: rgb(181, 181, 181);
+    box-sizing: border-box;
+    gap: 80px;
+    padding-bottom: 45px;
+
+    /* justify-content: space-between; */
+}
+
+.side1 {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.side1 h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+
+}
+
+.side1 p {
+    font-size: 12px;
+    padding-bottom: 8px;
+
+}
+
+.side2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.downloadbuttons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.download {
+    display: flex;
+    background-color: black;
+    width: 125px;
+    padding: 3px 8px;
+    font-size: 12px;
+    gap: 5px;
+    border-radius: 6px;
+}
+
+.download .fa-apple,
+.fa-android {
+    font-size: 35px;
+}
+
+p>span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+
+.fa-youtube,
+.fa-instagram,
+.fa-x-twitter,
+.fa-facebook {
+    font-size: 20px;
+    background-color: rgb(28, 29, 31);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+/*------------------------------------
+    Footer  Styling ends here
+-------------------------------------*/
+
+
+/*------------------------------------
+    Media query Starts here
+-------------------------------------*/
+
+@media (max-width:475px) {
+    .body {}
+
+    header {
+        margin: 0;
+    }
+
+    .header2 {
+        display: none;
+    }
+
+    .header3 .text {
+        display: none;
+    }
+
+    .header3 {
+        display: none
+    }
+
+    .header4 {
+        display: none;
+    }
+
+
+    .responsive {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 10px;
+        background-color: white;
+        box-sizing: border-box;
+    }
+
+    .rep1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .rep1 img {
+        width: 28%;
+
+    }
+
+    .rep1a {
+        display: flex;
+        gap: 10px;
+    }
+
+    .rep2 {
+        flex: 1;
+        display: flex;
+    }
+
+    .rep2 input {
+        width: 85%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(236, 234, 234);
+    }
+
+    .rep2 button {
+        width: 10%;
+        margin-left: -5px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(236, 234, 234);
+    }
+
+    .bannerimgcontainer {
+        margin: 10px;
+        box-sizing: border-box;
+    }
+
+    .headtext {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .headtext p {
+        display: none;
+    }
+
+    .headtext h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .gridcontainer {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+
+
+    }
+
+    .prices .discountprice {
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        left: 200px;
+        text-decoration: line-through;
+        opacity: 0.7;
+    }
+
+    .prices .figure {
+        font-size: 12px;
+        position: absolute;
+        left: 300px;
+        background: rgb(236, 175, 175);
+        color: rgb(236, 67, 67);
+        padding: 3px;
+        border-radius: 8px;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+
+@media(min-width:760px) and (max-width:999px) {
+    .header2 {
+        overflow: hidden;
+    }
+
+    .header3 {
+        overflow: hidden;
+
+    }
+
+
+    .logocontainer {
+        display: none;
+    }
+
+    .text {
+        width: 100px;
+
+    }
+
+
+
+    .text p {
+        font-size: 12px;
+
+    }
+
+    .sections p {
+        font-size: 10px;
+    }
+
+    .headtext p {
+        display: none;
+    }
+
+
+.gridcontainer {
+    grid-template-columns: 1fr 1fr;
+}
+
+footer{
+    display: none;
+}
+
+}
+
+@media (min-width:1020){
+    .gridcontainer {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     
 }
-   

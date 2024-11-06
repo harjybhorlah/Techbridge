@@ -6,6 +6,12 @@
     grid-row-gap: 40px;
 }
 
+@media(max-width: 481px){
+    .pagegrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 /* .video-preview {
     display: inline-block;
     width: 300px;
