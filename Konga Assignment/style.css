@@ -815,7 +815,7 @@ footer{
 
 }
 
-@media (min-width:1020){
+@media (max-width:1020){
     .gridcontainer {
         grid-template-columns: repeat(5, 1fr);
     }
