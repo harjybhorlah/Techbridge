@@ -364,8 +364,7 @@ header {
 .prices {
     display: flex;
     align-items: center;
-    justify-content: left;
-    position: relative;
+    justify-content:space-between;
     font-size: 20px;
     font-weight: 500;
     border-bottom: 1px solid lightgray;
@@ -377,16 +376,16 @@ header {
 .prices .discountprice {
     font-size: 16px;
     font-weight: 400;
-    position: absolute;
-    left: 105px;
+    /* position: absolute; */
+    /* left: 105px; */
     text-decoration: line-through;
     opacity: 0.7;
 }
 
 .prices .figure {
     font-size: 12px;
-    position: absolute;
-    left: 180px;
+    /* position: absolute; */
+    /* left: 180px; */
     background: rgb(236, 175, 175);
     color: rgb(236, 67, 67);
     padding: 3px;
@@ -744,7 +743,7 @@ p>span {
 
     }
 
-    .prices .discountprice {
+    /* .prices .discountprice {
         font-size: 16px;
         font-weight: 400;
         position: absolute;
@@ -761,7 +760,7 @@ p>span {
         color: rgb(236, 67, 67);
         padding: 3px;
         border-radius: 8px;
-    }
+    } */
 
     footer {
         display: none;
