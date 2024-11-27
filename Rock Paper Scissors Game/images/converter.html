@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sub{
+            background-color: black;
+            padding: 10px 15px;
+            border-radius: 50px;
+            color: white;
+        }
+
+        .is-subscribed{
+            background-color: rgb(224, 217, 217);
+            padding: 10px 15px;
+            border-radius: 50px;
+            color: black;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>Amazon shipping calculator</p>
+    <input type="text" class="amount" onkeydown="
+    enterKey();
+">
+    <button onclick="
+        totalCost();
+    
+    " class="calc">Calculate</button>
+    <p class="totalValue"></p>
+
+    <button onclick="
+        subscribe(); 
+    " class="sub">Subscribe</button>
+
+    <script>
+
+        function subscribe() {
+            let buttonElement = document.querySelector('.sub');
+            if (buttonElement.innerHTML === 'Subscribe') {
+                buttonElement.innerHTML = 'Subscribed';
+                buttonElement.classList.add('is-subscribed');
+            } else {
+                buttonElement.innerHTML = 'Subscribe';
+                buttonElement.classList.remove('is-subscribed');
+            }
+
+
+
+        }
+
+        function enterKey() {
+
+            if (event.key == 'Enter') {
+                totalCost();
+            }
+
+        }
+
+
+        function totalCost() {
+            const inputElement = document.querySelector('.amount');
+            let cost = Number(inputElement.value);
+
+
+
+            if (cost <= 45) {
+                cost = cost + 10;
+            }
+
+            document.querySelector('.totalValue').innerHTML = `$${cost}`
+        }
+
+
+        function convertToFahrenheit(celcius) {
+            return (celcius * 9 / 5) + 32
+        };
+
+        console.log(convertToFahrenheit(25));
+
+        function convertToCelcius(fahrenheit) {
+            return (fahrenheit - 32) * 5 / 9
+        };
+
+        console.log(convertToCelcius(86));
+
+        function covertTemprature(degrees, unit) {
+            // let celcius = degrees;
+            // let fahrenheit = degrees;
+
+
+            if (unit === 'F') {
+                degrees = convertToCelcius(degrees);
+                return (`${degrees} C`)
+            }
+
+            else if (unit === 'C') {
+                degrees = convertToFahrenheit(degrees);
+                return (`${degrees} F`)
+            }
+
+
+        };
+
+        console.log(covertTemprature(86, 'F'));
+        console.log(covertTemprature(30, 'C'));
+        console.log(covertTemprature(25, 'C'));
+
+
+    </script>
+
+</body>
+
+</html>

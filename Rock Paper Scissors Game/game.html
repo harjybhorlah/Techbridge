@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock | Paper | Scissors. </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="game.js"></script> -->
+</head>
+
+<body>
+    <div class="content">
+        <div class="heading">
+            <h3>
+                Are you Fit for this Challenge??
+            </h3>
+            <p>
+                Rock, Paper, Scissors
+            </p>
+        </div>
+        <div class="game">
+            <p>Make your Choice</p>
+            <div class="options">
+                <button class="btn" onclick="
+                    playGame('Rock');
+                    "><img src="images/rock-emoji.png" alt="" class="move"></button>
+
+                <button onclick="
+                playGame('Paper');
+
+                "><img src="images/paper-emoji.png" alt="" class="move"></button>
+
+                <button onclick="
+                playGame('Scissors');
+
+                "><img src="images/scissors-emoji.png" alt="" class="move"></button>
+
+            </div>
+            <div id="display">
+                <p class="choice dispayText">
+                    
+                </p>
+
+                <p class="decision"></p>
+
+                <p class="scoreBoard"></p>
+            </div>
+            <div class="reset">
+                <p>Not fit?? Try again.</p>
+                <button onclick="
+                resetGame();
+                ">Reset Game</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
