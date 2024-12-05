@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3) ), url(images/WhatsApp\ Image\ 2024-11-20\ at\ 11.53.33.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0 80px;   
+}
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logoContainer p{
+    font-size: 30px;
+    color: #fc8004;
+    font-weight: 600;
+}
+
+.logoContainer i{
+    color: #D3D3D3;
+    font-size: 20px;
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+ul li a:hover{
+    color: #fc8004;
+    font-size: 18px;
+}
+
+ul li a::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #fc8004;
+    position: absolute;
+    bottom: 0;
+    transition:width 1s;
+
+}
+
+
+
+ul li a:hover::before{
+    width: 100%;
+}
+
+.searchcontainer {
+    display: flex;
+    width: 300px;
+    
+}
+
+.searchcontainer input{
+    padding: 5px;
+    flex: 1;
+    border: 1px solid #fc8004;
+    background-color: transparent;
+}
+
+.searchcontainer input::placeholder{
+    font-size: 16px;
+    color: white;
+}
+
+.searchcontainer button{
+    padding: 5px 12px;
+    background-color: #fc8004;
+    color: white ;
+    margin-left: -2px;
+    border: none;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    
+}
+
+.textContainer h1{
+    font-size: 70px;
+    color: white;
+   
+}
+
+.textContainer span{
+    color: #fc8004;
+    
+}
+.textContainer p{
+    font-size: 20px;
+    color: white;
+    line-height:2em ;
+}
+
+.textContainer button{
+    width: 140px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fc8004;
+    border: none;
+    margin-top: 20px;
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px ;
+    color: white;
+}
+
+.Loghere{
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    color: #fc8004;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.details input{
+    width: 100%;
+    padding: 6px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #fc8004 ;
+}
+
+.details input::placeholder{
+    color: white;
+    font-size: 14px;
+}
+
+.loginBtn{
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    background-color: #fc8004;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.loginText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginText a{
+    text-decoration: none;
+    color: #fc8004;
+}
+
+.loginAlts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.iconContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
