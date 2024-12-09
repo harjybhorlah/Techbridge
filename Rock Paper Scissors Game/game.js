@@ -27,6 +27,26 @@ function pickComputerMove() {
     return computerMove;
 }
 
+document.querySelector('.rockBtn').addEventListener('click', () => {
+    playGame('Rock');
+});
+document.querySelector('.paperBtn').addEventListener('click', () => {
+    playGame('Paper');
+});
+document.querySelector('.scissorsBtn').addEventListener('click', () => {
+    playGame('Scissors');
+});
+
+document.body.addEventListener('keydown', (event) => {
+    if (event.key === 'r'){
+        playGame('Paper');
+    } else if (event.key === 'p'){
+        playGame('Paper');
+    } else if (event.key === 's') {
+        playGame('Scissors');
+    }
+} );
+
 //----- Code to play and make the the game compare       computer move and player move  ------------------//
 function playGame(playerMove) {
     const computerMove = pickComputerMove();
