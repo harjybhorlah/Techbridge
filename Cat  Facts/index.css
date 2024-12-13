@@ -63,34 +63,34 @@ h1 {
   animation: moveCat 15s linear infinite;
 }
 
-.flower {
+.bubbles {
   position: absolute;
   width: 50px;
   height: 50px;
-  background: radial-gradient(circle, #ffe4e1, #ff8c94);
+  background: radial-gradient(circle, rgb(18, 18, 228), rgb(236, 236, 243));
   border-radius: 50%;
-  animation: floatFlower 6s ease-in-out infinite;
+  animation: floatbubbles 6s ease-in-out infinite;
 }
 
-.flower:nth-child(1) {
+.bubbles:nth-child(1) {
   top: 20%;
   left: 10%;
   animation-delay: 0s;
 }
 
-.flower:nth-child(2) {
+.bubbles:nth-child(2) {
   top: 40%;
   left: 80%;
   animation-delay: 2s;
 }
 
-.flower:nth-child(3) {
+.bubbles:nth-child(3) {
   top: 60%;
   left: 20%;
   animation-delay: 4s;
 }
 
-.flower:nth-child(4) {
+.bubbles:nth-child(4) {
   top: 70%;
   left: 50%;
   animation-delay: 1s;
@@ -116,7 +116,7 @@ h1 {
     width: 120px;
   }
 
-  .flower {
+  .bubbles {
     width: 40px;
     height: 40px;
   }
@@ -142,7 +142,7 @@ h1 {
     width: 100px;
   }
 
-  .flower {
+  .bubbles {
     width: 30px;
     height: 30px;
   }
