@@ -402,11 +402,33 @@ header {
     font-weight: 600;
 }
 
+.sold{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding: 10px 0;
+}
 .sold p {
-    margin: 5px 0 20px 0;
     font-weight: 500;
 
 }
+
+.progress-container {
+    width: 60%;       
+    max-width: 500px;   
+    height: 10px;       
+    background-color: #f3f3f3; 
+    border-radius: 10px; 
+    overflow: hidden;
+  }
+
+.progress-bar {
+    width: 0%;           
+    height: 100%;        
+    background-color: #4caf50; 
+    border-radius: 10px; 
+    transition: width 0.5s ease-in-out; 
+  }
 
 .addcart p {
     text-align: center;
@@ -642,8 +664,7 @@ p>span {
     Media query Starts here
 -------------------------------------*/
 
-@media (max-width:475px) {
-    .body {}
+@media (max-width:500px) {
 
     header {
         margin: 0;
@@ -768,7 +789,7 @@ p>span {
 }
 
 
-@media(min-width:760px) and (max-width:999px) {
+@media(min-width:510px) and (max-width:1000px) {
     .header2 {
         overflow: hidden;
     }
